@@ -15,7 +15,7 @@ Main = React.createClass({
     let query = {};
 
     return {
-      chat: Chats.find(query, {sort: {createdAt: 1}}).fetch(),
+      chat: Chats.find(query, {sort: {createdAt: -1}}).fetch(),
       incompleteCount: Chats.find({checked: {$ne: true}}).count(),
       currentUser: Meteor.user()
     };
