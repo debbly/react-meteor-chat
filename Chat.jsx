@@ -1,4 +1,4 @@
-// Chat component - represents a chat text line
+// Chat component - represents a chat text line per user	
 Chat = React.createClass({
   propTypes: {
     chat: React.PropTypes.object.isRequired
